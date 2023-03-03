@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
+/* CSS Document */
+
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #FFFFFF;	
+	background-attachment: fixed;
+}
+
+#wrapper{
+	width: 100%;
+	height: auto;
+}
+
+
+#nav , #feature , #footer{
+	margin: 1%;
+}
+.logo{
+	position: fixed;
+	z-index: 100;
+}
+#content {
+	width: 95%;
+	margin: 1 auto;
+    list-style-type: none;
+	border: auto;
+    float: left;
+	
+}
+
+.menu li {
+	margin: 0;
+}
+.window{
+	padding-top: 40%;
+}
+.side{
+    transform: rotate(-90deg);
+    transform-origin: top left;
+	position: fixed;
+	
+	color:#020101;
+}
+.a{
+	top: 300px;
+}
+.b {
+	top: 450px;
+}
+
+.c {
+	top: 600px;
+}
+
+li{
+	display: inline;
+	padding: 0.5em;
+	position: absolute;
+}
+ 
+h2 , p{
+	color: #F86467;
+}
+
+
+.container{
+	width: 1280px;
+	height: 500px;
+	background: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	margin: 150px auto 0;
+	flex-wrap: wrap;
+}
+.container .box{
+	position: relative;
+	width: 600px;
+	height:450px;
+	float: left;  
+	margin: 15px;
+	box-sizing: border-box;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.container .box .imgbox{
+	position: relative;
+	overflow: hidden;
+}
+
+.container .box .imgbox img{
+	width: 100%;
+	transition: transform 0.5s;
+}
+
+.container .box:hover .imgbox img{
+	opacity: .2;
+	transform:scale(1.2);
+		
+}
+
+.container .box .details{
+	position: absolute;
+	width: 100%;
+	top:50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+.container .box .details  h2{
+	margin:0;
+	padding: 0;
+	font-size: 20px;
+	color: #E3787A;
+	transition: 0.5s;
+	transform: translateY(-50px);
+	opacity: 0;
+	visibility: hidden;
+}
+.container .box .details  p{
+	margin:0;
+	padding: 0;
+	font-size: 16px;
+	color: #E3787A;
+	transition: 0.5s;
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+}
+.container .box:hover .details  h2,
+.container .box:hover .details  p{
+
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+
+#footer{
+	text-align: center;
+	clear: both;
+	padding-top: 180%;
+}
+
+.instructions{
+	position: absolute;
+	width: 100%;
+	top:180%;
+	padding:150px;
+  font-size: 20px;
+
+}
+
+.social{
+	position: absolute;
+	width: 200%;
+	top:190%;
+	padding:150px;
+  size: 20px;
+
+}
+
+		h2{
+			font-size: 17px;
+		}
+		p{font-size: 10px}
+		#footer{
+			width: 100%;
+			font-size: 10px;
+			padding-top: 170%;
+		}
+	

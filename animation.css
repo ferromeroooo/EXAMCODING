@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@-webkit-keyframes example {
+  0%   {padding-left:100% ;}
+  100% {padding-left: -500%;}
+}
+
+	
+/* Standard syntax */
+@keyframes example {
+   0%   {padding-left:100% ;}
+  100% {padding-left: -500%;}
+}
